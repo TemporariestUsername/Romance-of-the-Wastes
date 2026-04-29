@@ -1,0 +1,11 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #ddd; }
+.app { padding: 12px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(280px, 1fr)); gap: 10px; }
+section { background: #1b1b1b; border: 1px solid #333; padding: 8px; border-radius: 4px; }
+.map { position: relative; height: 420px; width: 100%; background: #222; border: 1px solid #444; overflow: auto; }
+.node { position: absolute; transform: translate(-50%, -50%); border: none; color: #fff; padding: 4px 6px; border-radius: 4px; cursor: pointer; font-size: 11px; white-space: nowrap; }
+.toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.scroll { max-height: 180px; overflow: auto; }
+.log { grid-column: span 3; }
+button, select { background: #2b2b2b; color: #ddd; border: 1px solid #4a4a4a; padding: 6px; }
