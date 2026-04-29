@@ -296,7 +296,7 @@ export function App() {
     return c;
   });
 
-  const location = byId(c.settlements, player.locationSettlementId);
+  const location = byId(campaign.settlements, player.locationSettlementId);
   const adjacentEnemies = campaign.settlements.filter((s) => s.ownerFactionId !== player.factionId && neighbors(location, s));
 
   return (
